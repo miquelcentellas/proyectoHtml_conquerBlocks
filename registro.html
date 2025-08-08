@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SUPER WEB | ConqueBlocks</title>
+    <title>REGISTRO | ConqueBlocks</title>
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="description" content="" />
+    <meta name="description" content="Lorem ipsum" />
 
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -23,48 +23,295 @@
   </head>
 
   <body>
-
     <header>
-      <a href="/index.html"><img src="/img/common/logotipo-conquer-crypto.png" alt="" width="700"></a>
-      
-    <nav> 
+      <a href="/index.html"
+        ><img src="/img/common/logotipo-conquer-crypto.png" alt="" width="700"
+      /></a>
 
-      <strong>
-        <h2>
-          <a href="/index.html">Home</a> | 
-          <a href="/quienes_somos.html">Quiénes somos</a> |
-          <a href="/cursos.html">Cursos</a> |
-          <a href="/blog.html">Blog</a> |
-          <a href="/login.html">Login</a> | 
-          <a href="/registro.html">Registro</a> |
-          <a href="/contacto.html">Contacto</a>
-        </h2>
-      </strong>
-
-    </nav>
+      <nav>
+        <strong>
+          <h2>
+            <a href="/index.html">Home</a> |
+            <a href="/quienes_somos.html">Quiénes somos</a> |
+            <a href="/cursos.html">Cursos</a> | <a href="/blog.html">Blog</a> |
+            <a href="/login.html">Login</a> |
+            <a href="/registro.html">Registro</a> |
+            <a href="/contacto.html">Contacto</a>
+          </h2>
+        </strong>
+      </nav>
+      <hr />
     </header>
 
-
     <main>
-    
+      <!-- method="post SI QUEREMOS ENVIAR ADJUNTOS EN EL FORMULARIO"
+       pero con el ="get" podemos comprobar en la URL
+       que camos se están enviando -->
+      <form
+        action=""
+        name="registro"
+        method="get"
+        enctype="multipart/form-data"
+        autocomplete="on"
+      >
+        <h3>Introduzca sus datos para el registro</h3>
+
+        <p>
+          <!-- Nombre -->
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            size="32"
+            placeholder="Antonio"
+          />
+        </p>
+
+        <p>
+          <!-- Apellidos -->
+          <label for="lastname">Apellidos:</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            size="32"
+            placeholder="García Centellas"
+          />
+        </p>
+
+        <p>
+          <!-- Sexo -->
+          Sexo: <br />
+          <label for="si">Si</label>
+          <input type="radio" name="sex" id="si" value="y" />
+          <label for="no">No</label>
+          <input type="radio" name="sex" id="no" value="n" />
+        </p>
+
+        <p>
+          <!-- Fecha de nacimiento Mediante 3 select-->
+          Fecha de Nacimiento: Día:
+          <select name="day" id="day">
+            <option value="">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+
+          Mes:
+          <select name="month" id="month">
+            <option value="">-</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+
+          Año:
+          <select name="year" id="year">
+            <option value="">-</option>
+            <option value="1965">1965</option>
+            <option value="1966">1966</option>
+            <option value="1967">1967</option>
+            <option value="1968">1968</option>
+            <option value="1969">1969</option>
+            <option value="1970">1970</option>
+            <option value="1971">1971</option>
+            <option value="1972">1972</option>
+            <option value="1973">1973</option>
+            <option value="1974">1974</option>
+            <option value="1975">1975</option>
+            <option value="1976">1976</option>
+            <option value="1977">1977</option>
+            <option value="1978">1978</option>
+            <option value="1979">1979</option>
+            <option value="1980">1980</option>
+            <option value="1981">1981</option>
+            <option value="1982">1982</option>
+            <option value="1983">1983</option>
+            <option value="1984">1984</option>
+            <option value="1985">1985</option>
+            <option value="1986">1986</option>
+            <option value="1987">1987</option>
+            <option value="1988">1988</option>
+            <option value="1989">1989</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </p>
+
+        <p>
+          <!-- Email -->
+          <label for="mail">Email:</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            size="32"
+            placeholder="antoniogarcia@hotmail.com"
+          />
+        </p>
+
+        <p>
+          <!-- Web -->
+          <label for="web">Página Web:</label>
+          <input
+            type="text"
+            name="web"
+            id="web"
+            size="32"
+            placeholder="www.miquelcentellas.com"
+          />
+        </p>
+
+        <!-- Dirección -->
+        <p>
+          <!-- Calle -->
+          <label for="adress">Dirección:</label>
+          <input
+            type="text"
+            name="adress"
+            id="adress"
+            size="32"
+            placeholder="C/ Pablo Neruda, 1º Aº"
+          />
+        </p>
+        <p>
+          <!-- Poblacion + CP -->
+          <label for="city">Población:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            size="15"
+            placeholder="Barcelona"
+          />
+
+          <label for="codigo">CP:</label>
+          <input
+            type="text"
+            name="cp"
+            id="codigo"
+            size="8"
+            placeholder="32720"
+          />
+        </p>
+
+        <p>
+          <!-- Foto de Perfil -->
+          <label for="img">Adjunte foto de perfil:</label>
+          <input type="file" name="img" id="img" />
+        </p>
+
+        <p>
+          <label for="bio">Introduzca una breve Biografía:</label><br />
+          <textarea name="bio" id="bio" cols="42" rows="6"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" name="newsletter" id="newsletter" checked />
+          <label for="newsletter">Deseo recibir información y ofertas</label>
+        </p>
+
+        <p>
+          <input type="checkbox" name="policy" id="policy" required />
+          <label for="policy"> Entiendo y acepto las condiciones de uso</label>
+        </p>
+
+        <p>
+          <button>Enviar</button>
+          <button type="reset">Borrar formulario</button>
+        </p>
+      </form>
     </main>
 
-
     <footer>
-      <hr>
+      <hr />
       <section>
         <nav>
-          
           <p>Kit de prensa</p>
           <p>Política de privacidad</p>
-          <p>Síganos en redes sociales: <a href="https://www.instagram.com/miquelcentellas/"> 
-            <img src="/favicon-96x96.png" width="50" alt=""></a></p>
+          <p>
+            Síganos en redes sociales:
+            <a href="https://www.instagram.com/miquelcentellas/">
+              <img src="/favicon-96x96.png" width="50" alt=""
+            /></a>
+          </p>
           <p>Making Webs since 1995</p>
           <p>Copyright 2025 ©</p>
-
         </nav>
       </section>
     </footer>
-
   </body>
 </html>
